@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Projeto CRM Kanban
 
-## Getting Started
+Sistema de CRM no estilo Kanban construído para gerenciar clientes e tarefas de forma visual.
 
-First, run the development server:
+Stack Tecnológica:Front-end: React, Next.js e Tailwind CSS.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Back-end Principal: Python com FastAPI.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Back-end Secundário (Vagas específicas): Node.js com TypeScript.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Banco de Dados: PostgreSQL e MongoDB.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Infraestrutura e Deploy: Docker, Git e hospedagem na AWS ou VPS.
 
-## Learn More
+Fase Atual do Projeto: O desenvolvimento está dividido em duas fases principais:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> Fase 1 (O Alicerce): Construção da interface estática (Mês 1), lógica em JavaScript puro (Mês 2) e criação de rotas da API em Python (Mês 3).
+> Fase 2 (O Ritmo Full Stack): Conexão das fatias completas do sistema (Meses 4 e 5), desde o desenho da tela até a persistência de dados no banco e hospedagem final.
