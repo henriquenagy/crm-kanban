@@ -3,7 +3,7 @@ import Header from '@/components/header'
 
 export default function Home() {
  return (
-  <div className="flex min-h-screen bg-gray-100">
+  <div className="flex min-h-screen bg-slate-100">
    {/* Menu Lateral */}
    <Sidebar />
 
@@ -14,9 +14,9 @@ export default function Home() {
 
     {/* Área onde ficará o Kanban no futuro */}
     <main className="p-6">
-     <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-      <h1 className="text-2xl font-bold text-gray-800">Bem-vindo ao CRM</h1>
-      <p className="text-gray-600 mt-2">Seu layout base está pronto. As colunas do Kanban serão construídas aqui!</p>
+     <div className="bg-white p-6 shadow-md rounded-lg flex flex-col gap-4">
+      <h1 className="text-2xl font-bold text-gray-800">Bem-vindo ao CRM Kanban V1.0 2026</h1>
+      <p className="text-slate-600 ">Ainda estamos em construção. Aguarde...</p>
      </div>
     </main>
    </div>
