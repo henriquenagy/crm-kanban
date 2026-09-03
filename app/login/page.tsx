@@ -1,17 +1,15 @@
 export default function Login() {
  return (
   // CONTÊINER PAI: Ocupa 100% da altura da tela e centraliza o cartão no meio
-  <div className="flex min-h-screen items-center justify-center bg-slate-100 p-4">
+  <div className="flex min-h-screen items-center justify-center bg-slate-100">
    {/* CARTÃO DE LOGIN: Fundo branco, largura máxima controlada, cantos arredondados e sombra */}
-   <div className="w-full max-w-md rounded-2xl bg-white p-8 shadow-xl flex flex-col gap-6">
+   <div className="w-full max-w-md rounded-2xl bg-white p-8 shadow-xl flex flex-col justify-start">
     {/* CABEÇALHO DO FORMULÁRIO */}
-    <div className="text-center">
-     <h1 className="text-2xl font-bold text-slate-800">Acesse o CRM</h1>
-     <p className="text-sm text-slate-500 mt-1">Insira suas credenciais para entrar</p>
-    </div>
+    <h1 className="text-2xl font-bold text-slate-800 text-center">Acesse o CRM</h1>
+    <p className="text-sm text-slate-500 mt-1 text-center">Insira suas credenciais para entrar</p>
 
     {/* FORMULÁRIO */}
-    <form className="flex flex-col gap-4">
+    <form className="flex flex-col gap-4 mt-8">
      {/* CAMPO DE E-MAIL */}
      <div className="flex flex-col gap-1.5">
       <label htmlFor="email" className="text-sm font-medium text-slate-700">
@@ -29,7 +27,7 @@ export default function Login() {
      </div>
 
      {/* BOTÃO DE SUBMIT */}
-     <button type="submit" className="mt-2 w-full rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-indigo-700 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-indigo-600/50">
+     <button type="submit" className="mt-2 w-full rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-indigo-700 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-indigo-600/50 cursor-pointer">
       Entrar no Sistema
      </button>
     </form>
