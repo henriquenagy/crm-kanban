@@ -24,7 +24,7 @@ export default function Home() {
      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 overflow-x-auto items-start">
       {/* Coluna 1: A Fazer */}
       <div className="bg-slate-200/60 p-4 border border-slate-600 rounded-lg flex flex-col gap-3">
-       <h2 className="text-2xl font-semibold text-slate-700">A fazer</h2>
+       <h2 className="text-2xl font-bold text-purple-600">A fazer</h2>
        {/* CARD 1 (Estático) */}
        <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col gap-2 hover:shadow-md transition-all cursor-pointer">
         <div className="flex justify-between items-center">
@@ -37,7 +37,7 @@ export default function Home() {
       </div>
       {/* Coluna 2: Em Andamento */}
       <div className="bg-slate-200/60 p-4 border border-slate-600 rounded-lg flex flex-col gap-3">
-       <h2 className="text-2xl font-semibold text-slate-700">Em andamento</h2>
+       <h2 className="text-2xl font-bold text-purple-600">Em andamento</h2>
        {/* CARD 2 (Estático) */}
        <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col gap-2 hover:shadow-md transition-all cursor-pointer">
         <div className="flex justify-between items-center">
@@ -50,7 +50,7 @@ export default function Home() {
       </div>
       {/* Coluna 3: Concluído */}
       <div className="bg-slate-200/60 p-4 border border-slate-600 rounded-lg flex flex-col gap-3">
-       <h2 className="text-2xl font-semibold text-slate-700">Concluído</h2>
+       <h2 className="text-2xl font-bold text-purple-600">Concluído</h2>
        {/* CARD 3 (Estático) */}
        <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col gap-2 hover:shadow-md transition-all cursor-pointer">
         <div className="flex justify-between items-center">
