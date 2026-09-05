@@ -1,9 +1,3 @@
-'use client'
-
-import { useState } from 'react'
-
-const [email, setEmail] = useState('')
-const [passw, setPassw] = useState('')
 export default function Login() {
  return (
   // CONTÊINER PAI: Ocupa 100% da altura da tela e centraliza o cartão no meio
@@ -21,7 +15,7 @@ export default function Login() {
       <label htmlFor="email" className="text-sm font-medium text-slate-700">
        E-mail
       </label>
-      <input type="email" id="email" placeholder="seuemail@empresa.com" value={email} onChange={e => setEmail(e.target.value)} className="w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2 text.sm text-slate-800 placeholder-slate-400 shadow-sm transition-all focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600/20" />
+      <input type="email" id="email" placeholder="seuemail@empresa.com" className="w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2 text.sm text-slate-800 placeholder-slate-400 shadow-sm transition-all focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600/20" />
      </div>
 
      {/* CAMPO DE SENHA */}
@@ -29,11 +23,11 @@ export default function Login() {
       <label htmlFor="senha" className="text-sm font-medium text-slate-700">
        Senha
       </label>
-      <input type="password" id="senha" placeholder="••••••••" value={passw} onChange={e => setPassw(e.target.value)} className="w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2 text-sm text-slate-800 placeholder-slate-400 shadow-sm transition-all focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600/20" />
+      <input type="password" id="senha" placeholder="••••••••" className="w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2 text-sm text-slate-800 placeholder-slate-400 shadow-sm transition-all focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600/20" />
      </div>
 
      {/* BOTÃO DE SUBMIT */}
-     <button type="submit" onSubmit={e => email === '' && passw === ''return alert("Error")} className="mt-2 w-full rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-indigo-700 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-indigo-600/50 cursor-pointer">
+     <button type="submit" className="mt-2 w-full rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-indigo-700 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-indigo-600/50 cursor-pointer">
       Entrar no Sistema
      </button>
     </form>
