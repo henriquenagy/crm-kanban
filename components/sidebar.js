@@ -2,7 +2,6 @@
 import { useState } from 'react'
 
 export default function Sidebar() {
- // Estado único para controlar se a sidebar está expandida ou recolhida
  const [isOpen, setIsOpen] = useState(true)
 
  return (
@@ -12,7 +11,7 @@ export default function Sidebar() {
     <div className="flex items-center justify-between mb-8 px-2">
      {isOpen && <p className="text-xl font-bold text-white whitespace-nowrap">CRM Kanban</p>}
 
-     <button onClick={() => setIsOpen(!isOpen)} className="p-1.5 rounded-lg bg-purple-800/60 hover:bg-purple-900 text-white transition flex items-center justify-center cursor-pointer" title={isOpen ? 'Recolher Menu' : 'Expandir Menu'}>
+     <button onClick={() => setIsOpen(!isOpen)} className="px-2 py-1 rounded-lg bg-slate-800/60 hover:bg-slate-600/80 text-white transition cursor-pointer" title={isOpen ? 'Recolher Menu' : 'Expandir Menu'}>
       {/* Ícone simples em texto/seta que funciona no mobile e desktop */}
       {isOpen ? '<' : '>'}
      </button>

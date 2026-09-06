@@ -21,7 +21,7 @@ export default function Home() {
       <p className="text-slate-600 ">Preencha os campos abaixo conforme sua necessidade:</p>
      </div>
      {/* Quadros do Kanban*/}
-     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 overflow-x-auto items-start">
+     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 overflow-x-auto items-stretch">
       {/* Coluna 1: A Fazer */}
       <div className="bg-slate-200/60 p-4 border border-slate-600 rounded-lg flex flex-col gap-3">
        <h2 className="text-2xl font-bold text-purple-600">A fazer</h2>
