@@ -1,9 +1,27 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function Sidebar() {
- const [isOpen, setIsOpen] = useState(true)
+ const [isOpen, setIsOpen] = useState(false)
+ //inicio do useEffect pra redimensionar sidebar
+ useEffect(() => {
+  // Função para verificar o tamanho da tela e reduzir o sidebar
+  const checarTamanhoTela = () => {
+   if (window.innerWidth < 1120) {
+    setIsOpen(false)
+   } else {
+    setIsOpen(true)
+   }
+  }
+  // Executa assim que a página carrega
+  checarTamanhoTela()
+  // Adiciona o escutador para atualizar sempre que a janela for redimensionada
+  window.addEventListener('resize', checarTamanhoTela)
+  // Limpa o evento ao desmontar o componente
+  return () => window.removeEventListener('resize', checarTamanhoTela)
+ }, [])
 
+ //Fim do useEffect e inicio dos itens da sidebar
  return (
   <aside className={`${isOpen ? 'w-50 md:w-64' : 'w-20'} bg-linear-to-r from-purple-600 to-purple-700 text-white min-h-screen p-4 flex flex-col justify-between transition-all duration-300 relative`}>
    <div>
@@ -12,7 +30,6 @@ export default function Sidebar() {
      {isOpen && <p className="text-xl font-bold text-white whitespace-nowrap">CRM Kanban</p>}
 
      <button onClick={() => setIsOpen(!isOpen)} className="px-2 py-1 rounded-lg bg-slate-800/60 hover:bg-slate-600/80 text-white transition cursor-pointer" title={isOpen ? 'Recolher Menu' : 'Expandir Menu'}>
-      {/* Ícone simples em texto/seta que funciona no mobile e desktop */}
       {isOpen ? '<' : '>'}
      </button>
     </div>
