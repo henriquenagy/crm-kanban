@@ -1,18 +1,67 @@
-# Projeto CRM Kanban
+# 📌 CRM Kanban - Full-Stack Learning Project
 
-Sistema de CRM no estilo Kanban construído para gerenciar clientes e tarefas de forma visual.
+> **Self-Initiated Practical Learning Project:** Built from scratch to master the modern Full-Stack ecosystem, new programming languages, software architecture, and cloud infrastructure.
 
-Stack Tecnológica:Front-end: React, Next.js e Tailwind CSS.
+**CRM Kanban** is a complete client and task management system built in a visual board format. The project follows the Project-Based Learning (PBL) methodology, combining front-end best practices with a robust back-end and data persistence.
 
-Back-end Principal: Python com FastAPI.
+---
 
-Back-end Secundário (Vagas específicas): Node.js com TypeScript.
+## 🚀 Current Project Status
 
-Banco de Dados: PostgreSQL e MongoDB.
+* **Current Phase:** 💻 **Month 2 — Week 3: Logic & Interactivity (In Progress)**
+* **Current Focus:** Building and manipulating the **Add Task Modal**.
+* **Current Technical Implementation:** Real-time form data capture, input validation, and dynamic state array updates on the front end using React's `useState` hook.
 
-Infraestrutura e Deploy: Docker, Git e hospedagem na AWS ou VPS.
+---
 
-Fase Atual do Projeto: O desenvolvimento está dividido em duas fases principais:
+## 🛠️ Tech Stack
 
-> Fase 1 (O Alicerce): Construção da interface estática (Mês 1), lógica em JavaScript puro (Mês 2) e criação de rotas da API em Python (Mês 3).
-> Fase 2 (O Ritmo Full Stack): Conexão das fatias completas do sistema (Meses 4 e 5), desde o desenho da tela até a persistência de dados no banco e hospedagem final.
+* **Main Front-End:** React, Next.js (App Router), and Tailwind CSS.
+* **Main Back-End:** Python with FastAPI.
+* **Secondary Back-End (Portfolio / Specific Roles):** Node.js with TypeScript.
+* **Database:** PostgreSQL (Relational) and MongoDB (NoSQL).
+* **Infrastructure & DevOps:** Docker, Git/GitHub, and Hosting on AWS / VPS.
+
+---
+
+## 🗺️ Development Roadmap
+
+### 🟢 Phase 1: The Foundation (Months 1 to 3)
+
+- [x] **Month 1: Static Front-End & Layout (Next.js + Tailwind CSS)**
+  - [x] Base setup and Next.js boilerplate cleanup
+  - [x] Base layout: Sidebar and top Header
+  - [x] Static Login page UI
+  - [x] Visual structure of Kanban columns and cards
+
+- [/] **Month 2: Logic, State & Interactivity (JavaScript + React Hooks)**
+  - [x] **Week 1:** Screen interactivity control (mobile menu & simple login validation)
+  - [x] **Week 2:** Dynamic task rendering using `.map()` and initial state in React
+  - [🚀] **Week 3 (CURRENT):** Task modal creation, user input capture, and `useState` updates.
+  - [ ] **Week 4:** Movement logic and card status changes between columns.
+
+- [ ] **Month 3: RESTful API Construction (Python + FastAPI)**
+  - [ ] Local server setup and test routes
+  - [ ] User authentication
+  - [ ] `/tarefas` (Tasks) endpoints (GET and POST methods)
+  - [ ] Exception and request error handling
+
+---
+
+### 🔵 Phase 2: Full-Stack Pace & Connection (Months 4 and 5)
+
+- [ ] **Month 4: Database & Connection (PostgreSQL + Fetch API)**
+  - [ ] Relational table modeling in SQL
+  - [ ] Connecting FastAPI to PostgreSQL
+  - [ ] Replacing local state with API data fetching (`fetch()`) in React
+
+- [ ] **Month 5: Infrastructure, Containerization & Deploy**
+  - [ ] Database environment isolation with Docker Compose
+  - [ ] Recreating secondary routes in Node.js with Express and TypeScript
+  - [ ] Final deployment pipeline (Vercel for Front-end / Render or VPS for Back-end)
+
+---
+
+## 📝 Key Learnings & Methodology
+
+This repository records daily progress in programming logic and software architecture, utilizing **Semantic Commits** and a Git branching workflow to simulate real-world team environments.
