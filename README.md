@@ -1,4 +1,4 @@
-<b>Visit the project - CLICK HERE](https://crm-kanban-ashen.vercel.app)</b>
+[![Live Demo](https://img.shields.io/badge/🚀_LIVE_DEMO-CLICK_HERE-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://crm-kanban-ashen.vercel.app)
 
 # 📌 CRM Kanban - Full-Stack Learning Project
 
